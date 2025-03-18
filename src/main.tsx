@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App.tsx";
+// import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout.tsx";
 import Dashboard from "./Pages/Dashboard/Dashboard.tsx";
@@ -14,8 +14,8 @@ const router = createBrowserRouter([
     path: "/",
     element: <Layout />,
     children: [
-      { index: true, element: <App /> },
-      { path: "dashboard", element: <Dashboard /> },
+      { index: true, element: <Dashboard /> },
+      // { path: "dashboard", element: <Dashboard /> },
     ],
   },
   {
