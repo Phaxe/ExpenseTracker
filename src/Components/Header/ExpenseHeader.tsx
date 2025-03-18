@@ -4,7 +4,7 @@ export default function Header({ income, outcome,balance }: { income: number; ou
         <h1 className="text-2xl font-bold mb-4 text-white">Expense Tracker</h1>
         <div className="flex flex-col justify-between bg-black p-4  shadow-md border rounded-lg">
             <div className="bg-black w-[200px] mx-auto p-4 rounded-lg text-white font-bold text-2xl" >
-                <h4>Balance: {balance}$</h4>
+                <h4 className="flex">Balance: ${balance}</h4>
             </div>
           <div className="flex w-full items-center justify-center gap-10 my-5">
           <div className="text-green-600 font-semibold border-2 p-4 rounded-lg border-green-500 ">
